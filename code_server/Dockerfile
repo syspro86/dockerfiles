@@ -9,4 +9,6 @@ RUN apt-get update && apt-get install -y openjdk-11-jdk maven
 RUN apt-get update && apt-get install -y python3
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 
+ADD .profile /home/coder/
+
 USER coder
