@@ -3,7 +3,7 @@ FROM codercom/code-server
 USER root
 
 # docker
-RUN apt-get update && apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+RUN apt-get update && apt-get -y install apt-transport-https ca-certificates curl software-properties-common gnupg2
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 RUN echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic edge" > /etc/apt/sources.list.d/docker.list
 RUN apt-get update && apt-get -y install pkg-config libssl-dev libsasl2-dev libcurl4-openssl-dev docker-ce
