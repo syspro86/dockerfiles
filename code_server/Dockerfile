@@ -25,3 +25,5 @@ RUN update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 ADD .profile /home/coder/
 
 USER coder
+
+WORKDIR /home/coder/project
